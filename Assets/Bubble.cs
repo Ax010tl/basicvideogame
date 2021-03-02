@@ -22,7 +22,9 @@ public class Bubble : MonoBehaviour
     }
     // Cuando se toque la burbuja, generar una nueva :D
     public void OnTriggerEnter2D(Collider2D other){
-        relocate();
+        if(other.gameObject.tag == "Player"){
+            relocate();
+        }
     }
 
     private void relocate(){

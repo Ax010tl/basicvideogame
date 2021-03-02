@@ -35,6 +35,9 @@ public class Score : MonoBehaviour
         {
             score++;
             HandleScore ();
+        } else {
+            score--;
+            HandleScore();
         }
     }
 
