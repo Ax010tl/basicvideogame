@@ -17,10 +17,15 @@ public class Bubble : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // print(transform.position.y);
+        if(transform.position.y > maxHeight) relocate();
     }
     // Cuando se toque la burbuja, generar una nueva :D
     public void OnTriggerEnter2D(Collider2D other){
+        relocate();
+    }
+
+    private void relocate(){
         Vector3 newPos;
         newPos.x = Random.Range(minWidth, maxWidth);
         newPos.y = Random.Range(minHeight, maxHeight);
@@ -28,4 +33,5 @@ public class Bubble : MonoBehaviour
         transform.position = newPos;
         print("Count++");
     }
+
 }
