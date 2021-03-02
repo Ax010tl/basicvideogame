@@ -8,10 +8,11 @@ public class Bubble : MonoBehaviour
     [SerializeField] float minHeight;
     [SerializeField] float maxWidth;
     [SerializeField] float minWidth;
-    
+    [SerializeField] AudioSource sound;
     // Start is called before the first frame update
     void Start()
     {
+        sound = FindObjectOfType<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +24,8 @@ public class Bubble : MonoBehaviour
     // Cuando se toque la burbuja, generar una nueva :D
     public void OnTriggerEnter2D(Collider2D other){
         if(other.gameObject.tag == "Player"){
+            // Sonidos kul
+            sound.Play();
             relocate();
         }
     }

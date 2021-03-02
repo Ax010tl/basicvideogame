@@ -17,4 +17,15 @@ public class Tortuga : MonoBehaviour {
         Vector3 newPos = transform.position + vertical*speed;
         transform.position = newPos;
     }
+
+    public IEnumerator OnTriggerEnter2D(Collider2D other){
+        if(other.gameObject.tag == "Medusa"){
+            transform.localScale = new Vector3(0.65f, 0.65f, 1);            
+        } else if (other.gameObject.tag == "Meta"){
+            transform.localScale = new Vector3(1.3f, 1.3f, 1);
+        }
+        yield return new WaitForSeconds(0.5f);
+            // Wait n sec
+            transform.localScale = new Vector3(1, 1, 1);
+    }
 }

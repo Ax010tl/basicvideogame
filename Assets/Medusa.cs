@@ -7,7 +7,7 @@ public class Medusa : MonoBehaviour
     [SerializeField] float maxWidth;
     [SerializeField] float minWidth;
     Vector3 direccion;
-    float speed = 0.05f; 
+    [SerializeField] float speed = 0.05f; 
     // Start is called before the first frame update
     void Start()
     {
