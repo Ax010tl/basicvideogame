@@ -1,4 +1,13 @@
-﻿using System.Collections;
+/*
+Crear una burbuja en una posición aleatoria cada 10 segundos y borrarla después
+de 10 segundos.
+(Al final ya no lo usamos.)
+
+Lalo Villalpando
+01/03/2021
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,12 +23,6 @@ public class bubbleAdder : MonoBehaviour
     void Start()
     {
         InvokeRepeating("addBubble", 0f, 10f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void addBubble(){

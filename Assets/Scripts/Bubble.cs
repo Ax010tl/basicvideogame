@@ -1,4 +1,12 @@
-﻿using System.Collections;
+/*
+Controla comportamiento de burbuja cuando la toca la tortuga. Agrega puntaje,
+cambia su posición y hace un ruidito :3
+
+Lalo Villalpando
+02/03/2021
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

@@ -1,4 +1,11 @@
-﻿using System.Collections;
+/*
+Controla movimiento de medusa de extremo a extremo en la pantalla.
+
+Lalo Villalpando
+02/03/2021
+*/
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
